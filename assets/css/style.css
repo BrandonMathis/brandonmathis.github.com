@@ -229,6 +229,10 @@ em, i { font-style: italic; }
 
 }
 
+.post .subtitle {
+  color: #898989;
+  font-size: 18px
+}
 .post h1 {
 	margin-bottom:2 0px;
 	color: #222;
@@ -240,6 +244,18 @@ em, i { font-style: italic; }
   color: #111;
 }
 
+
+.post dl{
+  background-color: #F0F0F0;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px;
+}
+.post dt{
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 17px;
+}
 
 .post h2.headline {
 	/*font: italic 22px/1.3em Georgia,serif;*/
@@ -293,7 +309,10 @@ hr {
 	background: #eee;
 }
 
-span.code { font-family:Menlo, Monaco, Courier; background-color:#EEE; font-size:14px; }
+p code {
+  font-family: 'Source Code Pro', Menlo, monospace;
+  background-color:#EEE; font-size:14px;
+}
 
 pre	{
 	font-family:Menlo, Monaco, Courier;
