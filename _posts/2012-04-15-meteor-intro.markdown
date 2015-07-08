@@ -75,9 +75,10 @@ app run along with libraries like JQuery and Underscore!
 
 ### Fire Up the App
 
-```bash Start Meteor
+```bash
 >: meteor
 ```
+
 That is all you need! Meteor will now be running on `http://localhost:3000`. Open your browser there
 to checkout your app. All changes to your code and automatically hot-deployed to all running instances.
 So, I encourage you to try this out and contribute. Who knows where something like this could take us!
