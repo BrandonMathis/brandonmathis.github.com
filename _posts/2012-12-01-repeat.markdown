@@ -1,0 +1,42 @@
+---
+layout: post
+title: "repeat"
+date: 2012-12-01 13:24
+comments: true
+categories: 
+---
+
+Sometimes I like to do things over and over and over again. Well, not me, my computer. Here is how I get him to do it!
+
+```
+>: repeat 5 echo ‘hello’
+hello
+hello
+hello
+hello
+hello
+```
+
+```sh
+#!/bin/sh
+function usage(){
+  cat <<EOF
+Usage: $0 <integer> <command>
+
+Repeat <command> <integer> number of time
+EOF
+}
+ 
+if [ -z $1 ] || ! [[ "$1" =~ ^[0-9]+$ ]]
+then
+  usage
+  exit 1
+fi
+ 
+i=0
+num=$1
+shift
+while [ $(( i += 1 )) -le $num ]; do
+  eval "$@"
+done
+```
