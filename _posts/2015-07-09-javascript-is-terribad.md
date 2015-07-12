@@ -61,12 +61,12 @@ time you pick one a new framework will pop out of the woodwork.
 Where does the list end? At least the majority of the
 JavaScript community has agreed that [npm](https://www.npmjs.com/) is good but when
 will people stop trying to roll their own package management solution? Half of these
-things need to be put on a boat and sent out to sea!
+things need to be put on a boat and sent out to sea.
 
 ##Transpiled Languages
 
 "JavaScript is the byte-code of the internet" is something I have been hearing since 2013.
-Maybe it is because we truly do hate JavaScript or maybe it is because the simple task
+Maybe it is because we all truly do hate JavaScript or maybe it is because the simple task
 of defining a class with a few methods in pure JS looks something like this.
 
 ```js
@@ -96,15 +96,6 @@ it is because the JavaScript Standard Library is the weakest of any standard lib
 out there. Trying to write a pure JavaScript application is like trying to dig
 yourself to the center of the planet with a spoon.
 
-##Grunt Sucks => Gulp => Gulp Sucks
-
-Oh my GOD the build tools. Just when I was getting the hang of Grunt, Gulp came along and
-already people are touting about how terrible it is and tossing their own hat into the ring
-to become the new master of the JavaScript build tool world. Please stop this madness.
-If there is something crappy with Gulp or Grunt, fork it and submit a PR. As of this writing there are
-nearly as many forks of Gulp as there are [Grunt](https://github.com/gruntjs/grunt) but
-[Gulp](https://github.com/gulpjs/gulp).
-
 ##When will I get a true scripting language in the browser.
 
 One day I hope I live to see this.
@@ -123,12 +114,11 @@ Or
 </script>
 ```
 
-I don't know how, and I don't know when but the browser needs a proper scripting language.
+I don't know how, and I don't know when but  I do know that the browser needs a proper scripting language.
 Maybe the [ASM.js](https://en.wikipedia.org/wiki/Asm.js) team will pull this off. I have
 high hopes for [Emscripten](http://kripken.github.io/emscripten-site/) and what it could
 do to the frontend development world. In case you have not heard, Emscripten is an LLVM
 to ASM.js compiler that *can* allow any C based language to be run natively in the browser.
-
 
 ##In Conclusion
 
