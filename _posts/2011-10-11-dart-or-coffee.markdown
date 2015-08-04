@@ -8,8 +8,6 @@ categories:
 - javascript
 ---
 
-![Dart or Coffeescript](/images/dart_or_coffee.png)
-
 There has been a lot of buzz lately regarding the emergence of a new web programming language called Dart from Google. Dart, like [Coffeescript](http://coffeescript.org/),
 is a language that is interpreted into javascript and allows you to code in a more object oriented style when developing the front-end of your 
 web applications. A few people have asked if they should use Coffeescript of Dart. To that, I say to learn javascript, use coffeescript, and check out Dart. 

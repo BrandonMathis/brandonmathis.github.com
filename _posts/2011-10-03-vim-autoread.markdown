@@ -11,7 +11,7 @@ No exceptions!!
 
 Automatically updates a file being viewed in vim when it is updated outside of vim.  
 
-``` vim Autoread Documentation
+```vimscript
 :help autoread
 
 " When a file has been detected to have been changed outside of Vim and
@@ -20,8 +20,9 @@ Automatically updates a file being viewed in vim when it is updated outside of v
 " If this option has a local value, use this command to switch back to
 " using the global value:
 ```
+
 Just add to your .vimrc file
 
-``` vim autoread bashrc
+```vimscript
 set autoread
 ```

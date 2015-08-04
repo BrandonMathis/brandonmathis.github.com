@@ -27,7 +27,7 @@ text editor) and got to work and thus was I introduced to the wonders and bash, 
 [Homebrew](http://mxcl.github.com/homebrew/) is the self proclaimed "missing package manager for OS X." I spend most of my time on Apple machines and when
 I get a fresh OSX install, the first thing I do is [install Homebrew](https://github.com/mxcl/homebrew/wiki/installation).  
 
-``` bash Install Homebrew
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
 ```
 
@@ -46,15 +46,15 @@ Now you are ready to rock! Homebrew carries with it list of recipes that can be 
 I call installed Hombrew recipes 'casks.' These are applications that are managed by homebrew as if you were using any other package management system like apt-get, macports, or fink.
 Here are a few casks that I think are particularly useful.
 
-* `brew install git` Git is an excellent source control utility for your code.
-* `brew install macvim` A mac GUI for vim.
-* `brew install ack` Multi file keyword search for developers.
-* `brew install wget` Feature rich terminal utility for retrieving files via HTTP, HTTPS, FTP
-* `brew install flip` Script for converting newlines to Windows, Mac, or Unix format
-* `brew install python`
-* `brew install bash-completion`
-* `brew install mongodb`
-* `brew install mysql`
+`brew install git` Git is an excellent source control utility for your code.  
+`brew install macvim` A mac GUI for vim.  
+`brew install ack` Multi file keyword search for developers.  
+`brew install wget` Feature rich terminal utility for retrieving files via HTTP, HTTPS, FTP  
+`brew install flip` Script for converting newlines to Windows, Mac, or Unix format  
+`brew install python`  
+`brew install bash-completion`  
+`brew install mongodb`  
+`brew install mysql`  
 
 I include mysql and mongodb because, hey, who doesn't need databases amiright?
 
@@ -62,7 +62,7 @@ I include mysql and mongodb because, hey, who doesn't need databases amiright?
 So, lets say that you have been using homebrew for a month now and you want to see if you have any out of date casks. First you need to update your
 homebrew recipes and check for any outdated casks.
 
-``` bash Update Homebrew and Check For Outdated Casks
+```bash
 brew update
 brew outdated
 ```
@@ -70,12 +70,13 @@ brew outdated
 So, lets say you have several casks out of date. You could run `brew upgrade` on each cask but who wants to do that?! We're coders and the less leg-work we have
 to do the better. A quick bash one-liner can get those casks up to date.
 
-``` bash Update Casks
+```bash
 brew outdated | while read cask; do brew upgrade $cask; done
 ```
 
 ###Useful commands
-``` bash Usefull Commands
+
+```bash
 brew install FORMULA   # Install from a recepie
 brew uninstall FORMULA # Uninstall a cask
 brew list              # List all available recipes
