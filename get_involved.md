@@ -7,7 +7,6 @@ layout: none
 
 # Get Involved
 
-
 # Outline
 
 ## Who
