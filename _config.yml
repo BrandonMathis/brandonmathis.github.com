@@ -1,10 +1,13 @@
 # Dependencies
+#
+# gem 'jekyll'
+# gem 'jekyll-paginate'
 markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+# relative_permalinks: true
 
 # Setup
 title:            Brandon Mathis
@@ -18,3 +21,6 @@ author:
   url:            https://twitter.com/brandonmathis
 
 paginate:         1
+
+gems:
+  - jekyll-paginate
