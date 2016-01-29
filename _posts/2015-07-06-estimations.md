@@ -1,4 +1,5 @@
 ---
+layout: post
 published: true
 title: I Suck at Estimating
 ---

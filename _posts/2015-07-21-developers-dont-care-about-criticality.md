@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Developers Don't Care That Your Issue Is Critical
 ---
 

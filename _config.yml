@@ -1,38 +1,20 @@
-name: Brandon Mathis
-description: "@BrandonMathis"
-# meta_description: "Your New Jekyll Site, Blogging about stuffs"
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-aboutPage: true
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-markdown: redcarpet
-redcarpet:
-  extensions: ["fenced_code_blocks"]
+# Setup
+title:            Brandon Mathis
+tagline:          'Few facts, mostly opinions.'
+description:      '<a href="http://brandonmathis.me" target="_blank">Brandon Mathis</a> is a NC-native tech communty organizer, full time Lead Developer at <a href="http://smashingboxes.com" target="_blank">Smashing Boxes</a>, and part-time magpie deeveloper. <br/> <a href="http://twitter.com/brandonmathis">@BrandonMathis</a>'
+url:              http://brandonmathis.me
+baseurl:          /
 
-highlighter: pygments
+author:
+  name:           'Brandon Mathis'
+  url:            https://twitter.com/brandonmathis
 
-paginate: 20
-baseurl: /
-domain_name: 'http://blog.brandonmathis.me'
-google_analytics: 'UA-22222957-2'
-disqus_shortname: 'your-disqus-shortname'
-
-# Details for the RSS feed generator
-url:            'http://blog.brandonmathis.me'
-author:         'Brandon Mathis'
-authorTwitter:  'BrandonMathis'
-
-permalink:       /:year/:title/
-
-defaults:
-    -
-        scope:
-            path: "" # empty string for all files
-            type: pages
-        values:
-            layout: default
-    -
-        scope:
-            path: "" # empty string for all files
-            type: posts
-        values:
-            layout: post
+paginate:         1

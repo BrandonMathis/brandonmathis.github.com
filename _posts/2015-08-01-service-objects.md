@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Your Rails Models Are Too Fat
 ---
 

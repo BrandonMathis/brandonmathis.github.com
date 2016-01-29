@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Getting Involve
 subtitle: How I Got Involved In The Open Source Community And What It Did For My Career
 published: false

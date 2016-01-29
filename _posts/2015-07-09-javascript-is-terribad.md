@@ -1,4 +1,5 @@
 ---
+layout: post
 title: JavaScript is Terribad
 subtitle: A Reflection on the Web-Development Community's Shared Case of Stockholm Syndrome
 ---
