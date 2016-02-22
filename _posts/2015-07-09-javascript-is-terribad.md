@@ -70,7 +70,7 @@ things need to be put on a boat and sent out to sea.
 Maybe it is because we all truly do hate JavaScript or maybe it is because the simple task
 of defining a class with a few methods in pure JS looks something like this.
 
-```js
+~~~js
 function Dog(name){
    this.name = name;
 }
@@ -86,7 +86,7 @@ Dog.prototype.walk = function(){
 Dog.prototype.walk = function(){
     alert(this.name + " goes to sleep");
 };
-```
+~~~
 
 Don't even get me started on what inheritance looks like. Why are we trying to do
 OO in JavaScript anyway?
@@ -101,19 +101,19 @@ yourself to the center of the planet with a spoon.
 
 One day I hope I live to see this.
 
-```html
+~~~html
 <script type='python'>
 ...
 </script>
-```
+~~~
 
 Or
 
-```html
+~~~html
 <script type='ruby'>
 ...
 </script>
-```
+~~~
 
 I don't know how, and I don't know when but  I do know that the browser needs a proper scripting language.
 Maybe the [ASM.js](https://en.wikipedia.org/wiki/Asm.js) team will pull this off. I have

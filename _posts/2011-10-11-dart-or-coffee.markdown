@@ -25,7 +25,7 @@ hard for me to understand what is going on under the hood. Why use 17K lines of 
 
 ###First Coffeescript
 
-``` coffeescript
+~~~ coffeescript
 # Copyright (c) 2011, the <your_company> project authors. Please don't see the
 # AUTHORS file for details. All rights reserved. Use of this source code is
 # governed by a BSD-style license that can be found in the LICENSE file.
@@ -38,9 +38,9 @@ class HelloCoffeeTest
         console.log "Hello, Coffee man!"
 
 new HelloCoffeeTest().test_main()
-```
+~~~
 
-``` javascript
+~~~ javascript
 (function() {
   var HelloCoffeeTest;
   HelloCoffeeTest = (function() {
@@ -52,11 +52,11 @@ new HelloCoffeeTest().test_main()
   })();
   new HelloCoffeeTest().test_main();
 }).call(this);
-```
+~~~
 
 ###Now Dart
 
-```java
+~~~java
 // Copyright (c) 2011, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
@@ -15829,4 +15829,4 @@ isolate$inits.push(function(){
 }
 );
 RunEntry(unnamedcac5e9$main$member, this.arguments ? (this.arguments.slice ? [].concat(this.arguments.slice()) : this.arguments) : []);
-```
+~~~

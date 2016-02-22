@@ -2,8 +2,12 @@
 #
 # gem 'jekyll'
 # gem 'jekyll-paginate'
-markdown:         redcarpet
-highlighter:      pygments
+
+markdown:         kramdown
+highlighter:      rogue
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Permalinks
 permalink:        pretty

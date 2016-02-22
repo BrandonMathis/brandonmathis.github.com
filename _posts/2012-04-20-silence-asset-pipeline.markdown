@@ -13,6 +13,6 @@ It is also very noisy. I frequently find myself scrolling through log output fro
 asset pipeline. Or, I did, until I found out about the following techniques you can use
 to silence the asset pipeline forever.
 
-```ruby Gemfile
+~~~ruby Gemfile
 gem 'quiet_assets', group: :development
-```
+~~~

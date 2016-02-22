@@ -27,9 +27,9 @@ text editor) and got to work and thus was I introduced to the wonders and bash, 
 [Homebrew](http://mxcl.github.com/homebrew/) is the self proclaimed "missing package manager for OS X." I spend most of my time on Apple machines and when
 I get a fresh OSX install, the first thing I do is [install Homebrew](https://github.com/mxcl/homebrew/wiki/installation).  
 
-```bash
+~~~bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
-```
+~~~
 
 Note: You will need  
 
@@ -62,23 +62,23 @@ I include mysql and mongodb because, hey, who doesn't need databases amiright?
 So, lets say that you have been using homebrew for a month now and you want to see if you have any out of date casks. First you need to update your
 homebrew recipes and check for any outdated casks.
 
-```bash
+~~~bash
 brew update
 brew outdated
-```
+~~~
 
 So, lets say you have several casks out of date. You could run `brew upgrade` on each cask but who wants to do that?! We're coders and the less leg-work we have
 to do the better. A quick bash one-liner can get those casks up to date.
 
-```bash
+~~~bash
 brew outdated | while read cask; do brew upgrade $cask; done
-```
+~~~
 
 ###Useful commands
 
-```bash
+~~~bash
 brew install FORMULA   # Install from a recepie
 brew uninstall FORMULA # Uninstall a cask
 brew list              # List all available recipes
-```
+~~~
 That's all. Homebrew is an excellent package management utility that can act as a foundation for any developer's environment running on OSX.

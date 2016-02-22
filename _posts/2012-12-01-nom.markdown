@@ -12,7 +12,7 @@ Lots of people has some great ideas to eliminate it: adding the
 kills the sprockets logger. However, all of these options seem to break my logs because I run with 
 threadsafe = true. So, I had to devise my own idea and I came up with nom.
 
-```ruby
+~~~ruby
 #!/usr/bin/env ruby
 
 if ARGV[0].nil?
@@ -29,7 +29,7 @@ $stdin.each_line do |line|
   $skipped = false
   puts line
 end
-```
+~~~
 
 I just pipe my log's output into that script and tell it to nom every like containing the work 'assets'
 and, poof, problem soloved! No need to add extra gems or jigger with the internals of logging. Just tell

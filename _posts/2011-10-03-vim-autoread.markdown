@@ -11,7 +11,7 @@ No exceptions!!
 
 Automatically updates a file being viewed in vim when it is updated outside of vim.  
 
-```vim
+~~~vim
 :help autoread
 
 " When a file has been detected to have been changed outside of Vim and
@@ -19,10 +19,10 @@ Automatically updates a file being viewed in vim when it is updated outside of v
 " When the file has been deleted this is not done.  |timestamp|
 " If this option has a local value, use this command to switch back to
 " using the global value:
-```
+~~~
 
 Just add to your .vimrc file
 
-```vim
+~~~vim
 set autoread
-```
+~~~

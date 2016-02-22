@@ -14,6 +14,6 @@ Lets face it, using a simple `cap deploy` to fire off your code to production or
 revisions of your code each time you deploy. So, often I find myself having to run a `cap deploy:cleanup`. This can get annoying so a found a 
 clever way to make capistrano clean up after itself after each deploy.
 
-``` ruby
+~~~ ruby
 after :deploy, 'deploy:cleanup'
-```
+~~~

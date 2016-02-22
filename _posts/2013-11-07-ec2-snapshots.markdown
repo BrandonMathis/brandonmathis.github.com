@@ -21,10 +21,10 @@ To get this working you will need a few things:
 ##EC2 API Tools Setup
 Create an X.509 Certificate for this machine at the My Account -> [Security Credentials](https://portal.aws.amazon.com/gp/aws/securityCredentials) page. Once you have the certificate and key, scp those up to your server
 
-```bash
+~~~bash
 scp <path-to>/cert-*.pem ubuntu@your.server.com:
 scp <path-to>/pk-*.pem ubuntu@your.server.com:
-```
+~~~
 
 Once that is done, ssh onto your server.
 
@@ -32,51 +32,51 @@ First, ensure you enable [Multiverse](https://help.ubuntu.com/community/Reposito
 
 ###Update apt-get.
 
-```bash
+~~~bash
 sudo apt-get update
-```
+~~~
 
 ###Install amazon ec2-api-tools.
 
-```bash
+~~~bash
 sudo apt-get install ec2-api-tools
-```
+~~~
 
 If you're running an old version of Ubuntu then you may want to make use of awstools ppa in order to get the most up to date version of ec2-api-tools
 
-```bash
+~~~bash
 sudo apt-add-repository ppa:awstools-dev/awstools
 sudo apt-get update
 sudo apt-get install ec2-api-tools
-```
+~~~
 
 ###Add the following to your .bashrc
 
-```bash
+~~~bash
 export EC2_KEYPAIR=<Your keypair name> # name only, not the file name
 export EC2_URL=https://ec2.<your ec2 region>.amazonaws.com
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
 export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk/
-```
+~~~
 
 ###Load those changes into your environment
 
-```bash
+~~~bash
 source ~/.bashrc
-```
+~~~
 
 ###Check to see if everything is working.
 
-```bash
+~~~bash
 ec2-describe-images -o self -o amazon
-```
+~~~
 
 ##Use Cron to create automated backups
 
 I used the following script, executed by cron, to make backups once a week on sunday
 
-```ruby
+~~~ruby
 VOLUME   = /ATTACHMENT\s+(vol-\S+)/
 SNAPSHOT = /SNAPSHOT\s+(snap-\S+)/
 SNAP_MAX = 10
@@ -109,6 +109,6 @@ snaps = get_snapshots
 trim_snapshots snaps
 
 vols.each{ |vol| puts %x[ec2-create-snapshot #{vol}] }
-```
+~~~
 
 [Here](https://help.ubuntu.com/community/CronHowto) is an excellent resource for how to use cron.

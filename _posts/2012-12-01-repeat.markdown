@@ -8,16 +8,16 @@ categories:
 
 Sometimes I like to do things over and over and over again. Well, not me, my computer. Here is how I get him to do it!
 
-```
+~~~
 >: repeat 5 echo ‘hello’
 hello
 hello
 hello
 hello
 hello
-```
+~~~
 
-```sh
+~~~sh
 #!/bin/sh
 function usage(){
   cat <<EOF
@@ -39,4 +39,4 @@ shift
 while [ $(( i += 1 )) -le $num ]; do
   eval "$@"
 done
-```
+~~~

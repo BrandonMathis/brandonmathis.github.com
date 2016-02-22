@@ -29,7 +29,7 @@ Well, lets say that you do move that logic into the model. Well, over time it is
 
 Lets go back to that example of a purchasing the contents of your shopping cart. You created a `purchase` action on your `CartsController` containing everything that you needed to perform a purchase (details omitted for brevity sake)
 
-```ruby
+~~~ruby
 ...
 
 def purchase
@@ -41,11 +41,11 @@ def purchase
   @order.email_invoice_to_user(current_user)!
 end
 ...
-```
+~~~
 
 But you received a code-review requesting that you "move all this purchase logic out of the controller." So, like a good coder, you move your purchase logic into the order
 
-```ruby
+~~~ruby
 class Order
   has_one :user
   has_one :shipping_address
@@ -64,11 +64,11 @@ class Order
     email_invoice_to_user(current_user)!
   end
 end
-```
+~~~
 
 Now you are one step closer to the problem I have detailed above. Models were created to concern themselves with querying, persistence, and relations between other models in your system. Littering your models with this interaction-based business object is messy. What I propose is that you consider adding a new concept to your rails application called a Service layer. Which contains all this business logic governing the way that your application's models interact with each other.
 
-```
+~~~
 |-app/
 | |-controllers/
 | | |-users_controller.rb
@@ -82,9 +82,9 @@ Now you are one step closer to the problem I have detailed above. Models were cr
 | |-services/
 | | |-order/
 | | | |-purchase_service.rb
-```
+~~~
 
-```ruby
+~~~ruby
 class Order::PurchaseService
   attr_accessor :cart, :user, :credit_card
 
@@ -105,7 +105,7 @@ class Order::PurchaseService
 
   ...
 end
-```
+~~~
 
 Now, all of your purchasing logic and concepts are contained in a single place. This service can also be reused anywhere in your application to have any user purchase any cart with any credit_card so long as those 3 objects are passed into the service.
 

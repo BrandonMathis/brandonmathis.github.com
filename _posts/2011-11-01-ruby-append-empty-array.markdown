@@ -9,7 +9,7 @@ categories: ruby
 Often, I find myself working with some accessor or variable whose contents I do not know. When I need to append some value to these,
 I use a bit of ruby code that I consider to be quite clever.
 
-``` ruby
+~~~ ruby
 (a ||= []) << "a"
 # => ["a"]
-```
+~~~

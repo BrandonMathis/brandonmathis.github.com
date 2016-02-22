@@ -11,7 +11,7 @@ categories:
 
 I really love homebrew and I especially love updating all my 'casks' recipes using a single command, here's how I do it.
 
-```bash
+~~~bash
 brew outdated | while read cask; do brew upgrade $cask; done;
-```
+~~~
 

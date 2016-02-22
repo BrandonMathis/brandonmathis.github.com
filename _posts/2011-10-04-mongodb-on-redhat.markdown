@@ -18,20 +18,20 @@ Start with a basic RedHat server with yum installed. I went with Red Hat Enterpr
 ###Step 1
 [EPEL]( http://fedoraproject.org/wiki/EPEL ) (Extra Packages for Enterprise Linux) is a cool Fedora special interest group that keeps a collection of high quality packages for enterprise linux. [Download](http://fedoraproject.org/wiki/EPEL#What_packages_and_versions_are_available_in_EPEL.3F) an RPM of EPEL for the version of whatever system you are running on and unpack it (if you have not done so on your system already).
 
-```sh
+~~~sh
 wget http://download.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
 rpm -Uvh epel-release-5-4.noarch.rpm
-```
+~~~
 
 ###Step 2
 Once you have finished that portion of the setup, you are ready to install MongoDB. The gist bellow shows a few easy steps that worked for me to get mongodb up and running with minimal config work.
 
-```sh
+~~~sh
 yum install mongodb-server
 mkdir /var/lib/mongodb
 chown mongodb:mongodb /var/lib/mongodb
 /etc/init.d/mongod start
-```
+~~~
 
 This gist will
 <ul>
@@ -45,10 +45,10 @@ This gist will
 In order to access the db from an external resource, you must allow access via iptables.
 Open /etc/sysconfig/iptables using your favorite text editor and add the following line before COMMIT:
 
-```
+~~~
 -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 27017 -j ACCEPT
 -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 28017 -j ACCEPT
-```
+~~~
 
 <strong>This file is a table of rules, the first rule has precedence. If the first rule dis-allows everything then nothing else afterwards will matter. It is typical for the last line in a iptabels file to be a rule that disallows all access. Make sure your new rule comes before this rule.</strong>
 
@@ -59,8 +59,8 @@ Also, it is important that you make sure that this rule sits
 ###Step 4
 Restart iptables
 
-```sh
+~~~sh
 /etc/init.d/iptables restart
-```
+~~~
 
 Keep an eye out for my post where I detail how I [setup two databases as a replica set](http://www.mongodb.org/display/DOCS/Replica+Set+Tutorial).

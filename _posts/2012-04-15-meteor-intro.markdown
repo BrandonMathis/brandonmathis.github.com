@@ -29,17 +29,17 @@ snippet show in the screencast to install meteor
 
 ### Install Meteor
 
-```bash
+~~~bash
 >: curl install.meteor.com | /bin/sh
-```
+~~~
 
 Once you have meteor installed you can create a skeleton by running the `meteor create` command
 
 ### Create Your App
 
-```bash
+~~~bash
 >: meteor create FirstApp
-```
+~~~
 
 Now, you have your app created but I like to use coffeescript. Well, meteor has the ability to
 install small packages that can give you customized and extended functionality so we will be
@@ -47,9 +47,9 @@ installing the meteor coffeescript package.
 
 ### Install Meteor's Coffeescript Package
 
-```bash
+~~~bash
 >: meteor add coffeescript
-```
+~~~
 
 This will install the coffeescript package to meteor and add 'coffeescript' to you .meteor/packages
 file inside of you app's directory!
@@ -59,7 +59,7 @@ file inside of you app's directory!
 You will need to change the file extension of your FirstApp.js file to .coffee. Altogether,
 your app should look like this
 
-```coffeescript
+~~~coffeescript
 root = global ? window
  
 if root.Meteor.isClient
@@ -68,16 +68,16 @@ if root.Meteor.isClient
  
   root.Template.hello.events = "click input": ->
     alert "You pressed the button"
-```
+~~~
 
 That is all the code you need! Meteor automatically serves us the js libraries you need to make the
 app run along with libraries like JQuery and Underscore!
 
 ### Fire Up the App
 
-```bash
+~~~bash
 >: meteor
-```
+~~~
 
 That is all you need! Meteor will now be running on `http://localhost:3000`. Open your browser there
 to checkout your app. All changes to your code and automatically hot-deployed to all running instances.
