@@ -4,8 +4,9 @@
 # gem 'jekyll-paginate'
 
 markdown: kramdown
-highlighter: rogue
+
 kramdown:
+  parse_block_html: true
   input: GFM
   syntax_highlighter: rouge
 
