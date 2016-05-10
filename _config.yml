@@ -3,28 +3,28 @@
 # gem 'jekyll'
 # gem 'jekyll-paginate'
 
-markdown:         kramdown
-highlighter:      rogue
+markdown: kramdown
+highlighter: rogue
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 # relative_permalinks: true
 
 # Setup
-title:            Brandon Mathis
-tagline:          'Few facts, mostly opinions.'
-description:      '<a href="http://brandonmathis.me" target="_blank">Brandon Mathis</a> is a NC-native tech communty organizer, full time Lead Developer at <a href="http://smashingboxes.com" target="_blank">Smashing Boxes</a>, and part-time magpie developer. <br/> <a href="http://twitter.com/brandonmathis">@BrandonMathis</a>'
-url:              http://brandonmathis.me
-baseurl:          /
+title: Brandon Mathis
+tagline: 'Few facts, mostly opinions.'
+description: '<a href="http://brandonmathis.me" target="_blank">Brandon Mathis</a> is a NC-native tech communty organizer, full time Lead Developer at <a href="http://smashingboxes.com" target="_blank">Smashing Boxes</a>, and part-time magpie developer. <br/> <a href="http://twitter.com/brandonmathis">@BrandonMathis</a>'
+url: http://brandonmathis.me
+baseurl: /
 
 author:
-  name:           'Brandon Mathis'
-  url:            https://twitter.com/brandonmathis
+  name: 'Brandon Mathis'
+  url: https://twitter.com/brandonmathis
 
-paginate:         1
+paginate: 1
 
 gems:
   - jekyll-paginate
