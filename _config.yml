@@ -27,5 +27,5 @@ author:
 
 paginate: 1
 
-gems:
+plugins:
   - jekyll-paginate
