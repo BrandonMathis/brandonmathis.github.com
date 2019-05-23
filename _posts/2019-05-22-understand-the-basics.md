@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Understand the Basics (SASS)
+description: "When working on the web, don't forget the basics!"
+image: "understand_the_basics.png"
 categories:
   - html
   - css

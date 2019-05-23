@@ -17,8 +17,8 @@ permalink: pretty
 # Setup
 title: Brandon Mathis
 tagline: 'Few facts, mostly opinions.'
-description: '<a href="http://brandonmathis.me" target="_blank">Brandon Mathis</a> is a Freelance Full-Stack developer living and working in Raleigh, NC. <br/> <a href="http://twitter.com/brandonmathis">@BrandonMathis</a>'
-url: http://brandonmathis.me
+description: 'Brandon Mathis is a Freelance Full-Stack developer living and working in Raleigh, NC.'
+url: https://blog.brandonmathis.me/
 baseurl: '/'
 
 author:
