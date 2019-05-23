@@ -1,7 +1,3 @@
-.side-by-side-images {
-  float: left;
-}
-
-.side-by-side-images > p > img {
-  height: 400px;
+a {
+  color: firebrick;
 }

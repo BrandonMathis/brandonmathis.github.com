@@ -1,0 +1,20 @@
+$sizes: [sm, med, lg, xl];
+$color--red: #F00;
+$color--white: #000;
+$base-spacing: 1em;
+
+.section {
+  color: $color--white;
+
+  &--red {
+    background-color: $color--red;
+  }
+
+  @for $i from 1 through length($sizes) {
+    $size: nth($sizes, $i);
+
+    &--#{$size} {
+      padding: $base-spacing * $i;
+    }
+  }
+}

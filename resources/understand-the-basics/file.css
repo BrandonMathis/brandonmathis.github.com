@@ -1,0 +1,14 @@
+.section {
+  color: #000; }
+  .section--red {
+    background-color: #F00; }
+  .section--sm {
+    padding: 1em; }
+  .section--med {
+    padding: 2em; }
+  .section--lg {
+    padding: 3em; }
+  .section--xl {
+    padding: 4em; }
+
+/*# sourceMappingURL=file.css.map */
